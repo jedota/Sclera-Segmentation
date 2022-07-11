@@ -1,5 +1,6 @@
 ## Sclera Segmetation - Proposals
 
+<p class="text-justify"> 
 The paper presents a summary of the 2020 Sclera Segmentation Benchmarking Competition (SSBC), the 7th in the series of group benchmarking efforts centred around the problem of sclera segmentation. 
 Different from previous editions, the goal of SSBC 2020 was to evaluate the performance of sclera-segmentation models on images captured with mobile devices. 
 The competition was used as a platform to assess the sensitivity of existing models to i) differences in mobile devices used for image capture and ii) changes in the ambient acquisition conditions. 
@@ -7,6 +8,7 @@ The competition was used as a platform to assess the sensitivity of existing mod
 These included a wide variety of deep-learning solutions as well as one approach based on standard image processing techniques. Experiments were conducted with three recent datasets. 
 Most of the segmentation models achieved relatively consistent performance across images captured with different mobile devices (with slight differences across devices), 
 but struggled most with low-quality images captured in challenging ambient conditions, i.e., in an indoor environment and with poor lighting.
+</p>
 
 ## DenseNet10
 
@@ -16,18 +18,83 @@ https://github.com/Choapinus/DenseNet10
 
 ## CGANs2020CL
 
-Formulates the segmentation problem as a patch-to-patch translation task and uses a Conditional Generative Adversarial Network [41] for the segmentation process. A Resnet-101 model is utilised as the
-backbone of the solution and trained from scratch. Aggressive data augmentation is used during training.
+Formulates the segmentation problem as a patch-to-patch translation task and uses a Conditional Generative Adversarial Network for the segmentation process. A Resnet-101 model is utilised as the backbone of the solution and trained from scratch. Aggressive data augmentation is used during training.
 Our generating procedure is heavily based on the implementation of CycleGANs. For more information, please refer to the original implementation:
 
 https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
 
+
 ![index](https://user-images.githubusercontent.com/45126159/178218059-a8fe86b7-36e0-4a38-b653-d1712c24395b.png)
+
+### Option Train
+
+| ----------------- Options ---------------| 
+
+
+|                batch_size:  8                             | 
+|                     beta1: 0.5                           
+|           checkpoints_dir: ./checkpoints                 
+|            continue_train: False                         
+|                 crop_size: 256                           
+|                  dataroot: ./datasets/ocular_images_mask/	[default: None]
+|              dataset_mode: aligned                       
+|                 direction: AtoB                          
+|               display_env: main                          
+|              display_freq: 400                           
+|                display_id: 1                             
+|             display_ncols: 4                             
+|              display_port: 8097                          
+|            display_server: http://localhost              
+|           display_winsize: 256                           
+|                     epoch: latest                        
+|               epoch_count: 1                             
+|                  gan_mode: lsgan                         	[default: vanilla]
+|                   gpu_ids: 0                             
+|                 init_gain: 0.02                          
+|                 init_type: normal                        
+|                  input_nc: 3                             
+|                   isTrain: True                          	[default: None]
+|                 lambda_L1: 100.0                         
+|                 load_iter: 0                             	[default: 0]
+|                 load_size: 256                           
+|                        lr: 0.0002                        
+|            lr_decay_iters: 50                            
+|                 lr_policy: linear                        
+|          max_dataset_size: inf                           
+|                     model: pix2pix                       	[default: cycle_gan]
+|                  n_epochs: 200                           	[default: 100]
+|            n_epochs_decay: 100                           
+|                n_layers_D: 3                             
+|                      name: ls_gan_r9                     	[default: experiment_name]
+|                       ndf: 64                            
+|                      netD: basic                         
+                     netG: resnet_9blocks                	[default: unet_256]
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                  no_html: False                         
+                     norm: batch                         
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: train                         
+                pool_size: 0                             
+               preprocess: resize_and_crop               
+               print_freq: 100                           
+             save_by_iter: False                         
+          save_epoch_freq: 5                             
+         save_latest_freq: 5000                          
+           serial_batches: False                         
+                   suffix:                               
+         update_html_freq: 1000                          
+                  verbose: False                         
+----------------- End -------------------
+
+
 
 ## Mask2020CL 
 
 
-##Citation
+## Citation
 
 ```
 @INPROCEEDINGS{9304881,
