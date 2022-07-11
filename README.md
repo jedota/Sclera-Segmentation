@@ -26,9 +26,10 @@ https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
 
 ![index](https://user-images.githubusercontent.com/45126159/178218059-a8fe86b7-36e0-4a38-b653-d1712c24395b.png)
 
-### Option Train
+## Train Options:
 
-|          Options          |      Values.            | 
+|          Options          |      Values             | 
+| --------------------------| ------------------------| 
 |                batch_size:|   8                     |           
 |                     beta1:|  0.5                    |        
 |           checkpoints_dir:|  ./checkpoints          |        
@@ -41,8 +42,7 @@ https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
 |              display_freq:|  400                    |        
 |                display_id:|  1                      |        
 |             display_ncols:|  4                      |        
-|              display_port:|  8097                   |        
-|            display_server:|  http://localhost       |        
+|              display_port:|  8097                   |         
 |           display_winsize:|  256                    |        
 |                     epoch:|  latest                 |        
 |               epoch_count:|  1                      |        
@@ -67,7 +67,7 @@ https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
 |                       ndf:|  64                     |        
 |                      netD:|  basic                  |        
 |                      netG:|  resnet_9blocks         |        	
-|                      ngf: | 64                      |       
+|                      ngf: |  64                     |       
 |                no_dropout:|  False                  |        
 |                   no_flip:|  False                  |        
 |                   no_html:|  False                  |        
@@ -104,6 +104,7 @@ https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
 
 ## Questions:
 juan.tapia-farias@h-da.de
+
 andres.valenzuela@tocbiometrics.com
 
 
