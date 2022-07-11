@@ -22,11 +22,7 @@ Our generating procedure is heavily based on the implementation of CycleGANs. Fo
 
 https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
 
-
-
-
-
-
+![index](https://user-images.githubusercontent.com/45126159/178218059-a8fe86b7-36e0-4a38-b653-d1712c24395b.png)
 
 ## Mask2020CL 
 
