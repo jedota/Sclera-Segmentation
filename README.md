@@ -1,4 +1,4 @@
-## Sclera Segmentation - Usach and and hda Proposals
+## Sclera Segmentation - Usach and hda Proposals
 
 <p class="text-justify"> 
 The paper presents a summary of the 2020 Sclera Segmentation Benchmarking Competition (SSBC), the 7th in the series of group benchmarking efforts centred around the problem of sclera segmentation. 
@@ -22,6 +22,8 @@ Formulates the segmentation problem as a patch-to-patch translation task and use
 Our generating procedure is heavily based on the implementation of CycleGANs. For more information, please refer to the original implementation:
 
 https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
+
+Download models: https://www.dropbox.com/s/etnfbowc3j8mh38/ls_gan_r9-v2-tifs.zip?dl=0
 
 
 ![index](https://user-images.githubusercontent.com/45126159/178218059-a8fe86b7-36e0-4a38-b653-d1712c24395b.png)
@@ -87,8 +89,9 @@ https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
 
 ## Mask2020CL 
 
+Available soon
 
-## Citation
+## Citation: 
 
 ```
 @INPROCEEDINGS{9304881,
