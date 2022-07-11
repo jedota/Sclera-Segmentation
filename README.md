@@ -1,4 +1,4 @@
-## Sclera Segmetation - Proposals
+## Sclera Segmentation - Usach and and hda Proposals
 
 <p class="text-justify"> 
 The paper presents a summary of the 2020 Sclera Segmentation Benchmarking Competition (SSBC), the 7th in the series of group benchmarking efforts centred around the problem of sclera segmentation. 
@@ -28,67 +28,61 @@ https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
 
 ### Option Train
 
-| ----------------- Options ---------------| 
-
-
-|                batch_size:  8                             | 
-|                     beta1: 0.5                           
-|           checkpoints_dir: ./checkpoints                 
-|            continue_train: False                         
-|                 crop_size: 256                           
-|                  dataroot: ./datasets/ocular_images_mask/	[default: None]
-|              dataset_mode: aligned                       
-|                 direction: AtoB                          
-|               display_env: main                          
-|              display_freq: 400                           
-|                display_id: 1                             
-|             display_ncols: 4                             
-|              display_port: 8097                          
-|            display_server: http://localhost              
-|           display_winsize: 256                           
-|                     epoch: latest                        
-|               epoch_count: 1                             
-|                  gan_mode: lsgan                         	[default: vanilla]
-|                   gpu_ids: 0                             
-|                 init_gain: 0.02                          
-|                 init_type: normal                        
-|                  input_nc: 3                             
-|                   isTrain: True                          	[default: None]
-|                 lambda_L1: 100.0                         
-|                 load_iter: 0                             	[default: 0]
-|                 load_size: 256                           
-|                        lr: 0.0002                        
-|            lr_decay_iters: 50                            
-|                 lr_policy: linear                        
-|          max_dataset_size: inf                           
-|                     model: pix2pix                       	[default: cycle_gan]
-|                  n_epochs: 200                           	[default: 100]
-|            n_epochs_decay: 100                           
-|                n_layers_D: 3                             
-|                      name: ls_gan_r9                     	[default: experiment_name]
-|                       ndf: 64                            
-|                      netD: basic                         
-                     netG: resnet_9blocks                	[default: unet_256]
-                      ngf: 64                            
-               no_dropout: False                         
-                  no_flip: False                         
-                  no_html: False                         
-                     norm: batch                         
-              num_threads: 4                             
-                output_nc: 3                             
-                    phase: train                         
-                pool_size: 0                             
-               preprocess: resize_and_crop               
-               print_freq: 100                           
-             save_by_iter: False                         
-          save_epoch_freq: 5                             
-         save_latest_freq: 5000                          
-           serial_batches: False                         
-                   suffix:                               
-         update_html_freq: 1000                          
-                  verbose: False                         
------------------ End -------------------
-
+|          Options          |      Values.            | 
+|                batch_size:|   8                     |           
+|                     beta1:|  0.5                    |        
+|           checkpoints_dir:|  ./checkpoints          |        
+|            continue_train:|  False                  |        
+|                 crop_size:|  256                    |        
+|                  dataroot:|  ./datasets/ocular../	  |  
+|              dataset_mode:|  aligned                |        
+|                 direction:|  AtoB                   |        
+|               display_env:|  main                   |        
+|              display_freq:|  400                    |        
+|                display_id:|  1                      |        
+|             display_ncols:|  4                      |        
+|              display_port:|  8097                   |        
+|            display_server:|  http://localhost       |        
+|           display_winsize:|  256                    |        
+|                     epoch:|  latest                 |        
+|               epoch_count:|  1                      |        
+|                  gan_mode:|  lsgan                  |       
+|                   gpu_ids:|  0                      |        
+|                 init_gain:|  0.02                   |        
+|                 init_type:|  normal                 |        
+|                  input_nc:|  3                      |        
+|                   isTrain:|  True                   |        	
+|                 lambda_L1:|  100.0                  |        
+|                 load_iter:|  0                      |        	
+|                 load_size:|  256                    |        
+|                        lr:|  0.0002                 |       
+|            lr_decay_iters:|  50                     |        
+|                 lr_policy:|  linear                 |        
+|          max_dataset_size:|  inf                    |        
+|                     model:|  pix2pix                |        	
+|                  n_epochs:|  200                    |        	
+|            n_epochs_decay:|  100                    |        
+|                n_layers_D:|  3                      |        
+|                      name:|  ls_gan_r9              |        	
+|                       ndf:|  64                     |        
+|                      netD:|  basic                  |        
+|                      netG:|  resnet_9blocks         |        	
+|                      ngf: | 64                      |       
+|                no_dropout:|  False                  |        
+|                   no_flip:|  False                  |        
+|                   no_html:|  False                  |        
+|                      norm:|  batch                  |        
+|               num_threads:|  4                      |        
+|                 output_nc:|  3                      |        
+|                     phase:|  train                  |        
+|                 pool_size:|  0                      |        
+|                preprocess:|  resize_and_crop        |        
+|                print_freq:|  100                    |        
+|              save_by_iter:|  False                  |        
+|           save_epoch_freq:|  5                      |        
+|          save_latest_freq:|  5000                   |        
+|            serial_batches:|  | False                |                                    
+|          update_html_freq:| 1000                    |       
 
 
 ## Mask2020CL 
@@ -107,3 +101,10 @@ https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
   pages={1-10},
   doi={10.1109/IJCB48548.2020.9304881}}
 ```
+
+## Questions:
+juan.tapia-farias@h-da.de
+andres.valenzuela@tocbiometrics.com
+
+
+
