@@ -108,7 +108,7 @@ Available soon
 ## Questions:
 juan.tapia-farias@h-da.de
 
-andres.valenzuela@tocbiometrics.com
+andres.valenzuela.g@usach.cl
 
 
 
