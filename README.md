@@ -1,8 +1,8 @@
-## Sclera Segmentation - Usach and hda Proposals
+## Sclera Segmentation - USACH and h-da Proposals
 
 <p class="text-justify"> 
 The paper presents a summary of the 2020 Sclera Segmentation Benchmarking Competition (SSBC), the 7th in the series of group benchmarking efforts centred around the problem of sclera segmentation. 
-Different from previous editions, the goal of SSBC 2020 was to evaluate the performance of sclera-segmentation models on images captured with mobile devices. 
+Unlike previous editions, the goal of SSBC 2020 was to evaluate the performance of sclera-segmentation models on images captured with mobile devices. 
 The competition was used as a platform to assess the sensitivity of existing models to i) differences in mobile devices used for image capture and ii) changes in the ambient acquisition conditions. 
 26 research groups registered for SSBC 2020, out of which 13 took part in the final round and submitted a total of 16 segmentation models for scoring. 
 These included a wide variety of deep-learning solutions as well as one approach based on standard image processing techniques. Experiments were conducted with three recent datasets. 
@@ -12,8 +12,8 @@ but struggled most with low-quality images captured in challenging ambient condi
 
 ## DenseNet10
 
-The DenseNet is one of the most effcient semanttic segmetator.
-The implentation of DenseNet10 is available in: 
+DenseNet is one of the most efficient semantic segmentations.
+The implementation of DenseNet10 is available in: 
 https://github.com/Choapinus/DenseNet10
 
 ## CGANs2020CL
